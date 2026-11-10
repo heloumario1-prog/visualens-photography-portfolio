@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="VisuaLens, a photography portfolio exploring people, places, and the beauty in between. Explore curated collections in an interactive masonry gallery.">
+<meta name="theme-color" content="#f4f2eb">
+<title>VisuaLens — A different way of seeing</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer>
+</script>
+</head>
+<body>
+<a href="#work" class="skip">Skip to photographs</a>
+<header class="header">
+<a class="logo" href="#" aria-label="VisuaLens home">
+<span class="aperture" aria-hidden="true">
+<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" aria-hidden="true">
+<path d="M50 12V88" transform="rotate(0 50 50)"/>
+<path d="M50 12V88" transform="rotate(45 50 50)"/>
+<path d="M50 12V88" transform="rotate(90 50 50)"/>
+<path d="M50 12V88" transform="rotate(135 50 50)"/>
+</svg>
+</span> VisuaLens<span class="logo-dot">®</span>
+</a>
+<nav aria-label="Main navigation">
+<a href="#work" class="nav-work">Selected work <span>12</span>
+</a>
+<a href="#about">Behind the lens</a>
+<a class="contact-link" href="#contact">Let’s talk <span aria-hidden="true">→</span>
+</a>
+</nav>
+<button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation">☰</button>
+<nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden>
+<a href="#work">Selected work</a>
+<a href="#about">Behind the lens</a>
+<a href="#contact">Let’s talk →</a>
+</nav>
+</header>
+<main>
+<section class="hero" aria-labelledby="hero-title">
+<div class="hero-kicker">
+<span class="green-dot">
+</span> A VISUAL JOURNAL <span class="hero-index">EST. 2026 / VOL. 01</span>
+</div>
+<h1 id="hero-title">A different way<br>of <em>seeing.</em>
+<span class="hero-star" aria-hidden="true">
+<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" aria-hidden="true">
+<path d="M50 12V88" transform="rotate(0 50 50)"/>
+<path d="M50 12V88" transform="rotate(45 50 50)"/>
+<path d="M50 12V88" transform="rotate(90 50 50)"/>
+<path d="M50 12V88" transform="rotate(135 50 50)"/>
+</svg>
+</span>
+</h1>
+<div class="hero-bottom">
+<p>Ordinary moments. Extraordinary perspectives.<br>A collection of people, places, and the beauty in between.</p>
+<a class="explore" href="#work">Explore the collection <span aria-hidden="true">↓</span>
+</a>
+</div>
+</section>
+<section id="work" class="work" aria-labelledby="work-heading">
+<div class="work-top">
+<h2 id="work-heading">Selected work <sup>(12)</sup>
+</h2>
+<span class="work-note">A LITTLE CURIOSITY GOES A LONG WAY.</span>
+</div>
+<div class="filter-bar">
+<div class="filters" role="group" aria-label="Filter photographs by category">
+<button class="active" data-filter="All" aria-pressed="true">All work <span>12</span>
+</button>
+<button data-filter="Nature" aria-pressed="false">Nature <span>4</span>
+</button>
+<button data-filter="Portraits" aria-pressed="false">Portraits <span>2</span>
+</button>
+<button data-filter="Architecture" aria-pressed="false">Architecture <span>2</span>
+</button>
+<button data-filter="Urban" aria-pressed="false">Urban <span>2</span>
+</button>
+<button data-filter="Travel" aria-pressed="false">Travel <span>2</span>
+</button>
+</div>
+<span class="view-label" aria-hidden="true">▦ &nbsp; GALLERY VIEW</span>
+</div>
+<p id="gallery-status" class="sr-only" aria-live="polite">
+</p>
+<div class="gallery" id="gallery">
+</div>
+<div class="gallery-end">
+<span>EVERY FRAME, A SMALL STORY.</span>
+<span id="photo-count">12 PHOTOGRAPHS</span>
+</div>
+</section>
+<section id="about" class="about" aria-labelledby="about-heading">
+<div class="about-label">
+<span class="aperture" aria-hidden="true">
+<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" aria-hidden="true">
+<path d="M50 12V88" transform="rotate(0 50 50)"/>
+<path d="M50 12V88" transform="rotate(45 50 50)"/>
+<path d="M50 12V88" transform="rotate(90 50 50)"/>
+<path d="M50 12V88" transform="rotate(135 50 50)"/>
+</svg>
+</span>
+<p>BEHIND THE LENS</p>
+</div>
+<div class="about-content">
+<h2 id="about-heading">Less posing.<br>More <em>feeling.</em>
+</h2>
+<p>VisuaLens is a study in paying attention. To the light that changes a familiar street. To a face that tells a story. To the places that ask us to slow down.</p>
+<p>This portfolio brings those perspectives together — from quiet landscapes to the rhythm of a city. Take your time. Look a little closer.</p>
+<span class="project-note">A photography portfolio concept by Mario Helou.<br>Curated demonstration photography from Unsplash.</span>
+</div>
+</section>
+<section id="contact" class="contact">
+<div>
+<p class="eyebrow">HAVE SOMETHING IN MIND?</p>
+<h2>Let’s make<br>something <em>worth seeing.</em>
+</h2>
+</div>
+<button id="contact-open" class="contact-circle" aria-label="Open project inquiry">Start a<br>conversation <span aria-hidden="true">→</span>
+</button>
+</section>
+</main>
+<footer>
+<a class="logo" href="#">
+<span class="aperture" aria-hidden="true">
+<svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round" aria-hidden="true">
+<path d="M50 12V88" transform="rotate(0 50 50)"/>
+<path d="M50 12V88" transform="rotate(45 50 50)"/>
+<path d="M50 12V88" transform="rotate(90 50 50)"/>
+<path d="M50 12V88" transform="rotate(135 50 50)"/>
+</svg>
+</span> VisuaLens</a>
+<p>© <span id="year">2026</span> Mario Helou · Portfolio concept</p>
+<a href="#">Back to top ↑</a>
+</footer>
+<dialog id="lightbox" aria-labelledby="lightbox-title">
+<div class="lightbox-top">
+<span>VISUALENS / SELECTED WORK</span>
+<button class="icon-button" id="lightbox-close" aria-label="Close photo preview">✕</button>
+</div>
+<div class="lightbox-stage">
+<button class="icon-button previous" id="previous" aria-label="Previous photograph">←</button>
+<img id="lightbox-image" src="assets/01.jpg" alt="">
+<button class="icon-button next" id="next" aria-label="Next photograph">→</button>
+</div>
+<div class="lightbox-bottom">
+<div>
+<p id="lightbox-category">
+</p>
+<h2 id="lightbox-title">
+</h2>
+</div>
+<span id="lightbox-count">
+</span>
+</div>
+<p class="keyboard-hint">← → to explore · Esc to close</p>
+</dialog>
+<dialog id="contact-dialog" aria-labelledby="contact-title">
+<button class="icon-button" id="contact-close" aria-label="Close inquiry">✕</button>
+<p class="eyebrow">LET’S CREATE SOMETHING</p>
+<h2 id="contact-title">Your next story.</h2>
+<p>Build a project brief to copy and send through your preferred messaging app.</p>
+<form id="inquiry">
+<label>Your name<input name="name" autocomplete="name" required placeholder="Alex Morgan" maxlength="100">
+</label>
+<label>Project type<select name="type">
+<option>Portrait session</option>
+<option>Travel & editorial</option>
+<option>Architecture</option>
+<option>Brand photography</option>
+<option>Something else</option>
+</select>
+</label>
+<label>Tell me about it<textarea name="message" rows="4" required maxlength="2000" placeholder="The idea, location, and what you have in mind…">
+</textarea>
+</label>
+<button class="form-submit" type="submit">Create project brief →</button>
+<p id="inquiry-status" role="status">
+</p>
+<textarea id="brief-output" aria-label="Your project brief" readonly hidden rows="7">
+</textarea>
+<button id="copy-brief" class="copy-brief" type="button" hidden>Copy project brief</button>
+</form>
+</dialog>
+</body>
+</html>
